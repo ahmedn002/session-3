@@ -10,8 +10,10 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: RegistrationPage(),
+    return SafeArea(
+      child: const MaterialApp(
+        home: RegistrationPage(),
+      ),
     );
   }
 }
