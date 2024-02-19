@@ -29,7 +29,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
             key: _formKey,
             child: Column(
               children: [
-                Text(
+                const Text(
                   'Enter your data',
                   style: TextStyle(
                     fontSize: 25,
@@ -40,7 +40,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
                 InputField(
                   controller: _userNameController,
                   hintText: 'Enter your username',
-                  prefix: Icon(Icons.person),
+                  prefix: const Icon(Icons.person),
                   validator: (String? input) => Validators.checkLengthValidator(input, 7),
                 ),
                 const SizedBox(height: 10),

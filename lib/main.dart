@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:session3/screens/registration_page.dart';
+import 'package:session3/screens/constraints_screen.dart';
 
 void main() {
   runApp(const App());
@@ -11,8 +11,9 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: const MaterialApp(
-        home: RegistrationPage(),
+      child: MaterialApp(
+        theme: ThemeData.dark(),
+        home: ConstraintsScreen(),
       ),
     );
   }
